@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Smerse",
   description: "FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE",
-  metadataBase: new URL('https://allsome-next-eight.vercel.app/'),
+  metadataBase: new URL('https://smerse-one.vercel.app/'),
   openGraph: {
     images: '/meta-image.png',
   },
