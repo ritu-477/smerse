@@ -49,7 +49,7 @@ export default {
 
       backgroundImage: {
         "hero-bg": "url('/assets/images/webp/hero-bg.webp')",
-        "hero-tab-bg": "url('/assets/images/webp/hero-tab-view.webp')",
+        "hero-tab-bg": "url('/assets/images/webp/tab-hero-bg.webp')",
         "hero-mobile-bg": "url('/assets/images/webp/mobile-hero.webp')",
       }, 
 

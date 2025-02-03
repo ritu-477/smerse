@@ -6,7 +6,7 @@ import { ABOUT_DATA } from "../utils/helper";
 
 const About: React.FC = () => {
     return (
-        <div className="py-11 bg-dark-blue">
+        <div className="lg:pt-11 bg-dark-blue sm:pt-24 max-sm:pt-[60px] pb-16" id="project">
             <div className="container">
                 <div className="lg:flex-row flex flex-col">
                     <div className="flex flex-col justify-center">
@@ -19,7 +19,7 @@ const About: React.FC = () => {
                                     width={29}
                                     height={29}
                                     className="max-w-[29px]" />
-                                <Description styleClass="lg:max-w-[450px]" description={obj.description} />
+                                <Description styleClass="lg:max-w-[600px]" description={obj.description} />
                             </div>
                         ))}
                     </div>

@@ -3,9 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
+*{
     font-family: 'lato',sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
+    position: relative;
 }
 
 .button-shadow{
