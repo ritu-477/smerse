@@ -24,7 +24,7 @@ const About: React.FC = () => {
                         ))}
                     </div>
                     <div className="flex max-lg:justify-center max-lg:items-center">
-                        <Image src="/assets/images/webp/about-image.png"
+                        <Image src="/assets/images/webp/about-image.webp"
                             alt="about-image"
                             width={954}
                             height={690}
