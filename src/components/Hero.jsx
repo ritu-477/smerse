@@ -7,7 +7,7 @@ import CustomButton from './common/CustomButton';
 const Hero = () => {
     return (
         <>
-            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
+            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative' id='home'>
                 <Image className='absolute sm:block hidden right-0 lg:-bottom-[60px] -bottom-[45px] max-lg:w-[149px] max-lg:h-[154px]' alt='hero-right-ellipse' src="/assets/images/webp/hero-ellipse.webp" width={164} height={164} />
                 <Image className='absolute lg:block hidden left-0 top-0' src="/assets/images/webp/hero-left-ellipse.webp" alt='hero-left-ellipse' width={164} height={164} />
                 <Header />
