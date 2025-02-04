@@ -7,6 +7,22 @@ import CustomButton from "./CustomButton";
 
 const Header: React.FC = () => {
   const [open, setOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     if (open && window.innerWidth < 1024) {
@@ -18,8 +34,9 @@ const Header: React.FC = () => {
       document.body.style.overflow = "";
     };
   }, [open]);
+
   return (
-    <div className='bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center sticky z-40'>
+<div className={`bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center w-full transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 w-full shadow-lg bg-black z-[100]" : "relative"}`}>
       <div className='container'>
         <div className="container flex justify-between w-full mx-auto items-center relative">
           <button onClick={() => setOpen(!open)} className={`hidden w-[39px] h-8 justify-center items-center max-xl:absolute max-xl:right-5 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
