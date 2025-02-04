@@ -7,11 +7,11 @@ import CustomButton from './common/CustomButton';
 const Hero = () => {
     return (
         <>
-            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative' id='home'>
+            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
                 <Image className='absolute sm:block hidden right-0 lg:-bottom-[60px] -bottom-[45px] max-lg:w-[149px] max-lg:h-[154px]' alt='hero-right-ellipse' src="/assets/images/webp/hero-ellipse.webp" width={164} height={164} />
                 <Image className='absolute lg:block hidden left-0 top-0' src="/assets/images/webp/hero-left-ellipse.webp" alt='hero-left-ellipse' width={164} height={164} />
                 <Header />
-                <div className='container'>
+                <div className='container' id='home'>
                     <div className='flex flex-col items-center'>
                         <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px]' />
                         <div className="relative">
