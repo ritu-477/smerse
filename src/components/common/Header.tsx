@@ -37,12 +37,11 @@ const Header: React.FC = () => {
 
   return (
 <div className={`bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center w-full transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 w-full shadow-lg bg-black z-[100]" : "relative"}`}>
-      <div className='container'>
         <div className="container flex justify-between w-full mx-auto items-center relative">
-          <button onClick={() => setOpen(!open)} className={`hidden w-[39px] h-8 justify-center items-center max-xl:absolute max-xl:right-5 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
-            <span className={`w-full transition-all duration-300 min-h-[5px] max-h-[2px] mb-1 rounded-sm bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 !-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
-            <span className={`w-full transition-all duration-300 min-h-[5px] max-h-[2px] mb-1 rounded-sm bg-white ${open ? "hidden" : ""}`}></span>
-            <span className={`w-full transition-all duration-300 min-h-[5px] max-h-[2px] mb-1 rounded-sm bg-white after:!bg-white ${open ? "-translate-x-10 !bg-white" : ""}`}></span>
+          <button onClick={() => setOpen(!open)} className={`${open ? "pt-3":"pt-0"} hidden sm:w-[39px] w-8 h-6 sm:h-8 justify-between items-center max-xl:absolute max-xl:right-5 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
+            <span className={`w-full transition-all duration-300 min-h-1 rounded-sm bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 !-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
+          <span className={`w-full transition-all duration-300 min-h-1 rounded-sm bg-white ${open ? "hidden" : ""}`}></span>
+          <span className={`w-full transition-all duration-300 min-h-1 rounded-sm bg-white after:!bg-white ${open ? "-translate-x-10 !bg-white" : ""}`}></span>
           </button>
           <Link href="/">
             <Image className="lg:w-[68px] md:w-[76px] w-10 h-auto " src="/assets/images/webp/header-logo.webp" width={68} height={68} alt="logo" />
@@ -73,7 +72,6 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-    </div>
   )
 }
 

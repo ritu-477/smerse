@@ -60,8 +60,12 @@ export default {
         "orange": "#ff676b",
         "dark-blue": "#0A0A2B",
        "light-black": "#0A0A2B80",
-      }
-      
+      },
+
+      boxShadow: {
+        "custom-xl":"0px 0px 15.01px 0px #FFFFFF80",
+      },
+
     },
   },
   plugins: [],

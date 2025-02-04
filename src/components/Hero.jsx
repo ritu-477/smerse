@@ -7,7 +7,9 @@ import CustomButton from './common/CustomButton';
 const Hero = () => {
     return (
         <>
-            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px]'>
+            <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
+                <Image className='absolute sm:block hidden right-0 lg:-bottom-[60px] -bottom-[45px] max-lg:w-[149px] max-lg:h-[154px]' src="/assets/images/webp/hero-ellipse.webp" width={164} height={164} />
+                <Image className='absolute lg:block hidden left-0 top-0' src="/assets/images/webp/hero-left-ellipse.webp" width={164} height={164} />
                 <Header />
                 <div className='container'>
                     <div className='flex flex-col items-center'>
@@ -26,7 +28,7 @@ const Hero = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full h-10 bg-gradient-to-b from-deep-blue via-purple to-orange'></div>
+            <div className='w-full h-10 shadow-custom-xl bg-gradient-to-b from-deep-blue via-purple to-orange'></div>
         </>
     )
 }
