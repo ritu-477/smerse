@@ -5,7 +5,7 @@ interface DescriptionProps {
 
 const Description: React.FC<DescriptionProps> = ({ styleClass, description }) => {
     return (
-        <p className={`${styleClass} lg:text-base text-sm text-white font-normal tracking-[6%d]`}>
+        <p className={`${styleClass} lg:text-base text-sm text-white font-normal tracking-[6%]`}>
             {description}
         </p>
     );

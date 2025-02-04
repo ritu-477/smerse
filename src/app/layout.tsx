@@ -23,6 +23,7 @@ export const metadata: Metadata = {
     images: ["/meta-image.png"],
   },
 };
+
 export default function RootLayout({
   children,
 }: Readonly<{
