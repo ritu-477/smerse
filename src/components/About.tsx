@@ -18,7 +18,7 @@ const About = () => {
                                 width={29}
                                 height={29}
                                 className="max-w-[29px]" />
-                            <Description styleClass="lg:max-w-[455px]" description={obj.description} />
+                            <Description styleClass="xl:max-w-[455px]" description={obj.description} />
                         </div>
                     ))}
                 </div>
