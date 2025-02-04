@@ -6,12 +6,12 @@ import { ABOUT_DATA } from "../utils/helper";
 
 const About = () => {
     return (
-        <div className='bg-dark-blue relative xl:py-[210px] md:pt-24 pt-16 xl:flex items-center justify-center max-w-[1920px] mx-auto' >
+        <div className='bg-dark-blue relative xl:py-[210px] md:pt-24 pt-[60px] xl:flex items-center justify-center max-w-[1920px] mx-auto' >
             <div className="container mx-auto relative z-10">
                 <div className='xl:max-w-[550px] max-xl:mx-auto max-xl:w-full'>
-                    <Heading styleClass="pb-5" text="About Us" />
+                    <Heading styleClass="pb-7" text="About Us" />
                     {ABOUT_DATA.map((obj, index) => (
-                        <div key={index} className="flex gap-5 pb-2">
+                        <div key={index} className="flex gap-5 lg:pb-2 pb-3 items-start">
                             <Image
                                 src={obj.image}
                                 alt="about-icon"
