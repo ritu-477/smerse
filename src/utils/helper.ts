@@ -1,7 +1,3 @@
-export interface HeaderItem {
-    title: string;
-    link: string;
-}
 export const HEADER_LIST = [
     {
         title: "Home",
@@ -41,12 +37,8 @@ export const HEADER_LIST = [
     },
 ];
 
-export interface AboutItem {
-    image: string;
-    description: string;
-}
 
-export const ABOUT_DATA: AboutItem[] = [
+export const ABOUT_DATA = [
     {
         image: "/assets/images/svg/nft-icon.svg",
         description: "Smerse is the world’s first sport-to-earn NFT Avatar project that pays for doing sport.",

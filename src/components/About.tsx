@@ -8,6 +8,11 @@ import Image from "next/image";
 import Description from "./common/Description";
 import { ABOUT_DATA } from "../utils/helper";
 
+interface AboutItem {
+    image: string;
+    description: string;
+}
+
 const About = () => {
     useEffect(() => {
         let tl = gsap.timeline({
@@ -35,7 +40,7 @@ const About = () => {
                 <div className="container mx-auto relative z-10">
                     <div className='xl:max-w-[550px] max-xl:mx-auto max-xl:w-full about'>
                         <Heading styleClass="pb-7" text="About Us" />
-                        {ABOUT_DATA.map((obj, index) => (
+                        {ABOUT_DATA.map((obj: AboutItem, index) => (
                             <div key={index} className="flex gap-5 lg:pb-2 pb-3 items-start">
                                 <Image
                                     src={obj.image}

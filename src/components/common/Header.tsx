@@ -6,7 +6,12 @@ import { HEADER_LIST } from "../../utils/helper";
 import CustomButton from "./CustomButton";
 import { gsap } from "gsap";
 
-const Header: React.FC = () => {
+interface HeaderItem {
+  title: string;
+  link: string;
+}
+
+const Header = () => {
   const [open, setOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   useEffect(() => {
@@ -64,12 +69,15 @@ const Header: React.FC = () => {
         </div>
         <div className={`flex items-center max-xl:px-4 xl:gap-[63px] gap-7 relative w-full max-xl:bg-black mx-auto !text-black xl:max-h-max max-xl:fixed max-xl:top-0 max-xl:h-full max-xl:w-full max-xl:flex-col max-xl:bg-hero-pattern max-xl:duration-300 max-xl:justify-center justify-end max-xl:items-center z-[60] ${open ? "max-xl:left-0" : "max-xl:left-full"}`}>
           <div className="flex items-center gap-5 max-xl:flex-col">
-            {HEADER_LIST.map((item, index) => (
-              <Link onClick={() => setOpen(!open)} key={index} href={item.link} className="relative max-sm:text-sm text-base font-semibold leading-custom-xl text-white transition-all duration-300 ease-linear group navLinks"> {item.title}
+            {HEADER_LIST.map((obj: HeaderItem, index) => (
+              <Link onClick={() => setOpen(!open)}key={index}href={obj.link}
+                className="relative max-sm:text-sm text-base font-semibold leading-custom-xl text-white transition-all duration-300 ease-linear group navLinks">
+                {obj.title}
                 <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-white transition-all rounded-xl duration-300 ease-linear group-hover:w-full"></span>
               </Link>
             ))}
           </div>
+
           <div className="xl:block hidden">
             <div className="flex w-full navLinks">
               <CustomButton title='Mint Now' />
