@@ -1,20 +1,31 @@
-import React from 'react'
+"use client";
+import { useEffect } from "react";
 import Image from "next/image";
-import Header from './common/Header'
+import Header from './common/Header';
 import CustomButton from './common/CustomButton';
-
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
+    useEffect(() => {
+        let tl = gsap.timeline();
+        tl.fromTo(
+            ".hero MainText",
+            { scale: 0, }, { scale: 1, delay: 3, duration: 1, stagger: 0.5, }
+        );
+    });
     return (
         <>
             <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
-                <Image className='absolute sm:block hidden right-0 lg:-bottom-[60px] -bottom-[45px] max-lg:w-[149px] max-lg:h-[154px]' alt='hero-right-ellipse' src="/assets/images/webp/hero-ellipse.webp" width={164} height={164} />
-                <Image className='absolute lg:block hidden left-0 top-0' src="/assets/images/webp/hero-left-ellipse.webp" alt='hero-left-ellipse' width={164} height={164} />
+                <Image
+                    className='absolute sm:block hidden right-0 lg:-bottom-[60px] -bottom-[45px] max-lg:w-[149px] max-lg:h-[154px]'alt='hero-right-ellipse'src="/assets/images/webp/hero-ellipse.webp"width={164}height={164}/>
+                <Image className='absolute lg:block hidden left-0 top-0'src="/assets/images/webp/hero-left-ellipse.webp" alt='hero-left-ellipse' width={164}height={164}/>
                 <Header />
-                <div className='container' id='home'>
+                <div className='container heroSection' id='home'>
                     <div className='flex flex-col items-center'>
-                        <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px]' />
-                        <div className="relative">
+                        <Image src="/assets/images/webp/hero-logo.webp" alt='hero-logo' width={404} height={241} className='lg:max-w-[404px] heroMainText md:max-w-[360px] sm::max-w-[300px] max-w-[256px] lg:pt-[52px] pt-[79px] md:pb-8 pb-[108px]'/>
+                        <div className="relative heroMainText">
                             <h1 className="pt-8 md:text-8xl text-[40px] leading-[48px] font-black md:leading-custom-12xl text-white tracking-[6px] relative z-10 max-md:text-[40px] max-md:pt-10">
                                 SMERSE
                             </h1>
@@ -22,15 +33,16 @@ const Hero = () => {
                                 SMERSE
                             </span>
                         </div>
-                        <p className='md:text-4xl sm:text-2xl text-xl md:leading-custom-9xl font-semibold text-white max-w-[637px] text-center md:pt-[10px] md:pb-11 pt-7 pb-[82px]'>FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
+                        <p className='md:text-4xl sm:text-2xl text-xl md:leading-custom-9xl font-semibold text-white max-w-[637px] text-center md:pt-[10px] md:pb-11 pt-7 pb-[82px] heroMainText'>
+                            FOR A WHEALTHIER LIFESTYLE. ANYTIME, ANYWHERE
                         </p>
-                        <CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px]' />
+                        <div className="heroMainText"><CustomButton title='Get Started' styleClass='md:!py-4 md:!px-7 !pt-3 !pb-[13px] !px-[22px]' /></div>
                     </div>
                 </div>
             </div>
             <div className='w-full h-10 shadow-custom-xl bg-gradient-to-b from-deep-blue via-purple to-orange'></div>
         </>
-    )
-}
+    );
+};
 
-export default Hero
+export default Hero;
