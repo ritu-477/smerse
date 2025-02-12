@@ -56,3 +56,20 @@ export const ABOUT_DATA = [
         description: "Users can earn additional rewards, including rare NFTs the more they engage in physical activity.",
     }
 ];
+
+export const PROJECT_DATA = [
+    {
+        image: "/assets/images/svg/nft-icon.svg",
+        description: "NFT Avatars make up the core of the Smerse Project on the Ethereum Blockchain. Each male or female Avatar is unique itself & come with different traits upon minting & can further be customized with future additions on our In-App Marketplace.",
+    },
+
+    {
+        image: "/assets/images/svg/hand-icon.svg",
+        description: "Users will be able participate in various tasks to obtain augmented awards, airdrops, and special in-game incentives. Quests would be divided into daily, weekly, monthly, & special event categories. Each type will have its own set of benefits that contribute to playability & long-term engagement.",
+    },
+
+    {
+        image: "/assets/images/svg/playing-icon.svg",
+        description: "Finally, players can earn marketable NFTs by completing various achievement goals, such as PvP and grinding times, which serves to generate a feeling of purpose inside the game rather than users merely playing for the sake of playing.",
+    }
+];
