@@ -53,7 +53,7 @@ const Header = () => {
 
   return (
     <div className={`bg-light-black md:h-[100px] sm:h-16 h-[50px] flex items-center w-full transition-all duration-300 ${isScrolled ? "fixed top-0 left-0 w-full shadow-lg !bg-black z-[100]" : "relative"}`}>
-      <div className="container flex justify-between w-full mx-auto items-center relative">
+      <div className="container flex justify-between w-full mx-auto items-center relative max-md:px-4 max-lg:px-8">
         <button onClick={() => setOpen(!open)} className={`${open ? "pt-3" : "pt-0"} hidden sm:w-[39px] w-8 h-6 sm:h-8 justify-between items-center max-xl:absolute max-xl:right-5 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
           <span className={`w-full transition-all duration-300 min-h-1 rounded-sm bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 !-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
           <span className={`w-full transition-all duration-300 min-h-1 rounded-sm bg-white ${open ? "hidden" : ""}`}></span>

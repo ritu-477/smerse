@@ -36,8 +36,8 @@ const About = () => {
 
     return (
         <div className="bg-dark-blue" id="project">
-            <div className='bg-dark-blue relative xl:py-[210px] md:pt-24 pt-[60px] xl:flex items-center justify-center max-w-[1920px] mx-auto' >
-                <div className="container mx-auto relative z-10">
+            <div className='bg-dark-blue relative xl:py-[210px] md:pt-24 pt-[60px] xl:flex items-center justify-center max-w-[1440px] mx-auto' >
+                <div className="container mx-auto relative z-10 max-md:px-4 max-lg:px-8">
                     <div className='xl:max-w-[550px] max-xl:mx-auto max-xl:w-full about'>
                         <Heading styleClass="pb-7" text="About Us" />
                         {ABOUT_DATA.map((obj: AboutItem, index) => (
