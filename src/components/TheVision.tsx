@@ -1,14 +1,3 @@
-// import React from 'react'
-
-// const TheVision = () => {
-//   return (
-//     <div className='lg:py-[65px] md:py-[70px]'>
-
-//     </div>
-//   )
-// }
-
-// export default TheVision
 import React from "react";
 import Heading from "./common/Heading";
 import { VISION_LIST } from "@/utils/helper";
