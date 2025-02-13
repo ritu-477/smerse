@@ -6,7 +6,7 @@ import Description from "./common/Description";
 const TheVision = () => {
     return (
         <div className='lg:py-[65px] md:py-[70px] bg-dark-blue max-md:pt-8 -mt-[1px]' id="vision">
-            <div className="container max-md:px-4 max-lg:px-8 max-w-[1176px] mx-auto">
+            <div className="container max-w-[1176px] mx-auto">
                 <Heading text="THE VISION" styleClass="!mx-auto text-center" />
                 <div className="flex flex-wrap -mx-3 pt-[138px] max-lg:pt-32 max-sm:pt-[88px]">
                     {VISION_LIST.map((obj, i) => (
@@ -20,11 +20,10 @@ const TheVision = () => {
                                 }`}
                         >
                             <div className="relative bg-gradient-to-b cursor-pointer from-deep-blue via-purple to-orange rounded-[10px] h-full p-[1px] group">
-                                <div className="bg-gray rounded-[10px] px-7 max-sm:px-4 pt-[90px] pb-7 h-full hover:bg-transparent min-h-[365px]">
+                                <div className="bg-gray rounded-[10px] md:px-7 lg:px-5 xl:px-8 max-sm:px-3 pt-[90px] pb-7 hover:bg-transparent h-full min-h-[365px]">
                                     <Description
                                         description={obj.description}
-                                        styleClass={`leading-custom-3xl text-center sm:mx-auto ${i === 0 ? "sm:max-w-[260px]" : "max-w-[284px] mx-auto"
-                                            }`}
+                                        styleClass="leading-custom-3xl text-center sm:mx-auto"
                                     />
                                 </div>
                                 <div className="size-24 max-sm:size-[86px] absolute rounded-full top-0 -translate-y-1/2 left-1/2 -translate-x-1/2 bg-gradient-to-b from-purple via-pink to-orange p-[1px]">

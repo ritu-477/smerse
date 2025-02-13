@@ -11,10 +11,10 @@ interface ProjectItem {
 const TheProject = () => {
     return (
         <div className="bg-dark-blue md:py-[70px] lg:py-[65px] py-[67px] lg:-mt-[1px]" id="project">
-            <div className="container mx-auto relative z-10 max-md:px-4 max-lg:px-8">
+            <div className="container mx-auto relative z-10">
                 <div className="lg:flex-row flex flex-col xl:gap-[109px] md:gap-[53px] gap-10">
-                    <div className='lg:max-w-[550px] max-lg:mx-auto max-lg:w-full about flex flex-col justify-center'>
-                        <Heading styleClass="pb-5" text="THE PROJECT" />
+                    <div className='lg:max-w-1/2 max-lg:mx-auto max-lg:w-full about flex flex-col justify-center'>
+                        <Heading styleClass="md:pb-5 pb-[35px]" text="THE PROJECT" />
                         {PROJECT_DATA.map((obj: ProjectItem, index) => (
                             <div key={index} className="flex gap-5 pb-2 items-start">
                                 <Image
@@ -24,8 +24,7 @@ const TheProject = () => {
                                     height={29}
                                     className="max-w-[29px]" />
                                 <Description
-                                    styleClass={`${index === 0 ? "max-w-[260px] xl:max-w-[456px] sm:max-w-[621px]" : "lg:max-w-[456px] sm:max-w-[621px] max-w-[254px]"
-                                        }`}
+                                    styleClass="lg:max-w-[511px]"
                                     description={obj.description}
                                 /></div>
                         ))}
@@ -36,6 +35,7 @@ const TheProject = () => {
                             width={471}
                             height={626}
                             className="max-xl:w-full max-w-[471px]" />
+                            
                     </div>
                 </div>
             </div>
