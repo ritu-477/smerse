@@ -32,10 +32,10 @@ const About = () => {
                             </div>
                         ))}
                     </div>
-                    <div className="xl:w-6/12 w-full lg:pt-0 max-lg:pt-7 max-sm:pt-4 justify-center flex">
+                    <div className="xl:w-6/12 w-full lg:pt-0 max-lg:pt-7 max-sm:pt-4 justify-center lg:justify-end flex">
                         <Image alt="about-image"
                             width={954}
-                            height={690} className='max-w-[654px] w-full max-sm:min-w-[400px] max-xl:min-w-[800px] xl:hidden max-xl:block max-lg:mx-auto max-xl:-translate-x-5' src="/assets/images/webp/about-image.webp"/>
+                            height={690} className='max-w-[654px] w-full max-sm:min-w-[400px] max-xl:min-w-[700px] xl:hidden max-xl:block max-lg:mx-auto lg:-translate-x-1 -translate-x-5' src="/assets/images/webp/about-image.webp"/>
                     </div>
                 </div>
                 <div className="xl:absolute xl:right-0 xl:bottom-[2%] image xl:block hidden">
