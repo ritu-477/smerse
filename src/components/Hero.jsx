@@ -1,20 +1,10 @@
 "use client";
-import { useEffect } from "react";
 import Image from "next/image";
 import Header from './common/Header';
 import CustomButton from './common/CustomButton';
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 
 const Hero = () => {
-    useEffect(() => {
-        let tl = gsap.timeline();
-        tl.fromTo(
-            ".hero MainText",
-            { scale: 0, }, { scale: 1, delay: 3, duration: 1, stagger: 0.5, }
-        );
-    });
+   
     return (
         <>
             <div className='lg:bg-hero-bg sm:bg-hero-tab-bg bg-hero-mobile-bg bg-cover bg-no-repeat bg-center lg:pb-[105px] pb-[85px] relative'>
