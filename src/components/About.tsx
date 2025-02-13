@@ -14,26 +14,7 @@ interface AboutItem {
 }
 
 const About = () => {
-    useEffect(() => {
-        let tl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".abo ut", 
-                start: "top 80%",  
-                toggleActions: "play none none none" 
-            }
-        });
-        tl.fromTo(
-            ".abo ut",
-            { x: -200, opacity: 0 },
-            { x: 0, opacity: 1, duration: 0.7 }
-        );
-        tl.fromTo(
-            ".ima ge",
-            { x: 200, opacity: 0 },
-            { x: 0, opacity: 1, }
-        );
-    }, []);
-
+    
     return (
         <div className="bg-dark-blue" id="project">
             <div className='bg-dark-blue relative xl:py-[210px] md:pt-24 pt-[60px] xl:flex items-center justify-center max-w-[1440px] mx-auto' >

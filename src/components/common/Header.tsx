@@ -30,17 +30,6 @@ const Header = () => {
   }, []);
 
   useEffect(() => {
-    let tl = gsap.timeline();
-    tl.fromTo(
-      ".lo go",
-      { y: -200, }, { y: 0, duration: .7, }
-    );
-    tl.fromTo(
-      ".na vLinks", { y: -200, }, { y: 0, stagger: 0.2, }
-    );
-  }, []);
-
-  useEffect(() => {
     if (open && window.innerWidth < 1024) {
       document.body.style.overflow = "hidden";
     } else {
