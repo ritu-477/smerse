@@ -24,10 +24,10 @@ const TheProject = () => {
                                     height={29}
                                     className="max-w-[29px]" />
                                 <Description
-                                    styleClass={`${index === 0 ? "max-w-[260px] xl:max-w-[456px] sm:max-w-[621px]" : "xl:max-w-[456px] sm:max-w-[621px] max-w-[254px]"
+                                    styleClass={`${index === 0 ? "max-w-[260px] xl:max-w-[456px] sm:max-w-[621px]" : "lg:max-w-[456px] sm:max-w-[621px] max-w-[254px]"
                                         }`}
                                     description={obj.description}
-                                />                    </div>
+                                /></div>
                         ))}
                     </div>
                     <div className="image flex max-lg:justify-center">

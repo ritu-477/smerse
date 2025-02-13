@@ -12,17 +12,17 @@ export default {
         "3xl": "1921px",
       },
 
-       container: {
+      container: {
         center: true,
         padding: "16px",
         screens: {
           sm: "640px",
-          md: "834px",
+          md: "768px",
           lg: "1024px",
           xl: "1172px",
         },
       },
-       
+
       fontSize: {
         "custom-sm": "13px",
         "custom-2xl": "32px",
@@ -51,7 +51,7 @@ export default {
         "hero-bg": "url('/assets/images/webp/hero-bg.webp')",
         "hero-tab-bg": "url('/assets/images/webp/tab-hero-bg.webp')",
         "hero-mobile-bg": "url('/assets/images/webp/mobile-hero.webp')",
-      }, 
+      },
 
       colors: {
         "purple": "#c641c6",
@@ -59,11 +59,12 @@ export default {
         "deep-blue": "#952ffe",
         "orange": "#ff676b",
         "dark-blue": "#0A0A2B",
-       "light-black": "#0A0A2B80",
+        "light-black": "#0A0A2B80",
+        "gray": "#222240",
       },
 
       boxShadow: {
-        "custom-xl":"0px 0px 15.01px 0px #FFFFFF80",
+        "custom-xl": "0px 0px 15.01px 0px #FFFFFF80",
       },
 
     },
