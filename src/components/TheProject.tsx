@@ -10,7 +10,7 @@ interface ProjectItem {
 
 const TheProject = () => {
     return (
-        <div className="bg-dark-blue md:py-[70px] lg:py-[65px] -mt-[1px]" id="project">
+        <div className="bg-dark-blue md:py-[70px] lg:py-[65px] py-[67px] lg:-mt-[1px]" id="project">
             <div className="container mx-auto relative z-10 max-md:px-4 max-lg:px-8">
                 <div className="lg:flex-row flex flex-col xl:gap-[109px] md:gap-[53px] gap-10">
                     <div className='lg:max-w-[550px] max-lg:mx-auto max-lg:w-full about flex flex-col justify-center'>

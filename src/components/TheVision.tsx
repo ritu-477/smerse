@@ -5,7 +5,7 @@ import Description from "./common/Description";
 
 const TheVision = () => {
     return (
-        <div className='lg:py-[65px] md:py-[70px] bg-dark-blue' id="vision">
+        <div className='lg:py-[65px] md:py-[70px] bg-dark-blue max-md:pt-8 -mt-[1px]' id="vision">
             <div className="container max-md:px-4 max-lg:px-8 max-w-[1176px] mx-auto">
                 <Heading text="THE VISION" styleClass="!mx-auto text-center" />
                 <div className="flex flex-wrap -mx-3 pt-[138px] max-lg:pt-32 max-sm:pt-[88px]">
@@ -20,10 +20,10 @@ const TheVision = () => {
                                 }`}
                         >
                             <div className="relative bg-gradient-to-b cursor-pointer from-deep-blue via-purple to-orange rounded-[10px] h-full p-[1px] group">
-                                <div className="bg-gray rounded-[10px] px-7 max-sm:px-4 pt-[90px] pb-7 h-full hover:bg-transparent">
+                                <div className="bg-gray rounded-[10px] px-7 max-sm:px-4 pt-[90px] pb-7 h-full hover:bg-transparent min-h-[365px]">
                                     <Description
                                         description={obj.description}
-                                        styleClass={`leading-custom-3xl text-center mx-auto ${i === 0 ? "max-w-[260px]" : "max-w-[284px]"
+                                        styleClass={`leading-custom-3xl text-center sm:mx-auto ${i === 0 ? "sm:max-w-[260px]" : "max-w-[284px] mx-auto"
                                             }`}
                                     />
                                 </div>
