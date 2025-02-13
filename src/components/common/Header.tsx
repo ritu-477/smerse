@@ -4,7 +4,6 @@ import Image from "next/image";
 import React, { useState, useEffect, } from "react";
 import { HEADER_LIST } from "../../utils/helper";
 import CustomButton from "./CustomButton";
-import { gsap } from "gsap";
 
 interface HeaderItem {
   title: string;
