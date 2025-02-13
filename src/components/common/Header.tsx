@@ -35,11 +35,11 @@ const Header = () => {
 
   return (
     <div className={`flex justify-between flex-col w-full z-[99] fixed top-0 ${scrolling ? 'bg-black transition-all duration-300 ease-linear delay-100' : 'bg-light-black'}`}>
-      <div className="max-w-[1140px] px-4 max-md:px-4 flex justify-between w-full mx-auto lg:py-4 md:py-3 py-[5px] items-center relative">
-        <button onClick={() => setOpen(!open)} className={`hidden md:max-w-[39px] md:h-11 h-full max-w-5 w-full justify-center items-center max-xl:absolute max-xl:right-8 max-md:right-4 relative z-[70] max-xl:flex flex-col overflow-hidden`}>
-          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] md:mb-2 mb-[3px] !rounded-full bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 md:!-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
-          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] md:mb-2 mb-[3px] !rounded-full bg-white ${open ? "hidden" : ""}`}></span>
-          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] md:mb-2 mb-[3px] !rounded-full bg-white after:!bg-white ${open ? "-translate-x-12 !bg-white" : ""}`}></span>
+      <div className="container flex justify-between w-full mx-auto lg:py-4 md:py-3 py-[5px] items-center relative">
+        <button onClick={() => setOpen(!open)} className={`hidden h-4 md:max-w-[39px] md:h-8 max-w-5 w-full justify-between items-center max-xl:absolute max-xl:right-4 max-md:right-4 relative z-[70] max-xl:flex flex-col overflow-hidden ${open ? "pt-[13px]":"lg:pt-0"}`}>
+          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] !rounded-full bg-white relative after:w-full after:h-full after:absolute after:top-0 after:left-0 ${open ? "rotate-45 md:!-mb-1 after:rotate-90 after:!rounded-sm after:bg-white !bg-white" : ""}`}></span>
+          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] !rounded-full bg-white ${open ? "hidden" : ""}`}></span>
+          <span className={`w-6 transition-all duration-300 md:min-h-[5px] md:min-w-[44px] h-[3px] !rounded-full bg-white after:!bg-white ${open ? "-translate-x-12 !bg-white" : ""}`}></span>
         </button>
         <Link href="/">
           <Image className="lg:!max-w-[68px] md:max-w-14 sm:max-w-12 max-w-10 h-auto w-full" src="/assets/images/webp/header-logo.webp" width={68} height={68} alt="logo" />
